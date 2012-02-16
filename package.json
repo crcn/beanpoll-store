@@ -10,9 +10,6 @@
 	"devDependencies": {
 		
 	},
-	"scripts": {
-		"install": "make web"
-	},
 	"main": "./lib/web/index.js",
 	"directories": {
 		"mesh-src": "./src",

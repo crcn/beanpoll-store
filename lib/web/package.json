@@ -1,14 +1,11 @@
 {
   "directories": {},
-  "name": "",
+  "name": "beanpoll-store",
   "description": "",
   "author": "",
   "version": "0.0.1",
   "dependencies": {
     "mesh-winston": "0.0.x"
   },
-  "devDependencies": {},
-  "scripts": {
-    "install": "make web"
-  }
+  "devDependencies": {}
 }
