@@ -71,7 +71,7 @@ exports.plugin = function(router)
 			data = req.sanitized[key] = getData(key);
 
 			if(!this.next()) res.end(data);
-		}
+		},
 
 		/**
 		 */
@@ -120,10 +120,11 @@ exports.plugin = function(router)
 			router.request(ops.channel).query(ops.data).push();
 		},
 
+
 		/**
 		 */
 
-		'push -one init': function()
+		'pull load/*': function()
 		{
 			logger.verbose('store ready');
 
@@ -134,6 +135,8 @@ exports.plugin = function(router)
 				router.push(channel, getData(channel));
 			}	
 			logger.verbose('done pushing data');
+
+			this.next();
 
 		}
 	});
