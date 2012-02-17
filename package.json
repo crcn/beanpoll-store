@@ -1,18 +1,19 @@
 {
-	
-	"name": "beanpoll-store",
-	"description": "",
-	"author": "",
-	"version":"0.0.1",
-	"dependencies": {
-		"mesh-winston":"0.0.x"
-	},
-	"devDependencies": {
-		
-	},
-	"main": "./lib/web/index.js",
-	"directories": {
-		"mesh-src": "./src",
-		"lib": "./lib"
-	}
+  "name": "beanpoll-store",
+  "description": "",
+  "author": "",
+  "version": "0.0.1",
+  "dependencies": {
+    "mesh-winston": "0.0.x"
+  },
+  "devDependencies": {},
+  "main": "./lib/web/index.js",
+  "directories": {
+    "mesh-src": "./src",
+    "lib": "./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crcn/beanpoll-store.git"
+  }
 }
