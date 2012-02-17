@@ -6,8 +6,7 @@ exports.plugin = function(router)
 
 	var channelsKey = 'stored/channels3';
 
-	var storedChannels = store.get(channelsKey) || {},
-	models = {};
+	var storedChannels = store.get(channelsKey) || {};
 
 	function getData(channel)
 	{
@@ -16,15 +15,17 @@ exports.plugin = function(router)
 
 
 
-			logger.debug('get data');
+		logger.verbose('get data');
+
 		//model? deserialize it.
-		if(d.name && models[d.name])
+		if(d.name && getModel(d.name))
 		{
-			var md = new models[d.name]();
+			logger.verbose('set model');
+			var clazz = getModel(d.name);
+			var md = new clazz();
 
 			if(md._set) md._set(d.data);
 
-			logger.debug('set model');
 			return md;
 		}
 		else
@@ -52,6 +53,11 @@ exports.plugin = function(router)
 	}
 
 
+	function getModel(name) {
+		return router.models ? router.models[name] : null;
+	}
+
+
 
 
 	router.on({
@@ -59,10 +65,21 @@ exports.plugin = function(router)
 		/**
 		 */
 
+		'pull store/:key OR store': function(req, res) {
+
+			var key = this.data('key'),
+			data = req.sanitized[key] = getData(key);
+
+			if(!this.next()) res.end(data);
+		}
+
+		/**
+		 */
+
 
 		'push store': function(ops)
 		{
-			logger.debug('store data: ' + ops.channel);
+			logger.verbose('store data: ' + ops.channel);
 
 			var toStore = null;
 
@@ -72,6 +89,8 @@ exports.plugin = function(router)
 				//is it a model? serialize it.
 				if(ops.data._bindings && ops.data.doc)
 				{
+					logger.verbose('is a model');
+
 					toStore = { name: ops.data.name, data: ops.data.doc };
 				}
 				else
@@ -102,20 +121,11 @@ exports.plugin = function(router)
 		},
 
 		/**
-		 * used for deserializing data
-		 */
-
-		'push models': function(m)
-		{
-			models = m;
-		},
-
-		/**
 		 */
 
 		'push -one init': function()
 		{
-			logger.debug('store ready');
+			logger.verbose('store ready');
 
 			for(var channel in storedChannels)
 			{
@@ -123,7 +133,7 @@ exports.plugin = function(router)
 
 				router.push(channel, getData(channel));
 			}	
-			logger.debug('done pushing data');
+			logger.verbose('done pushing data');
 
 		}
 	});
