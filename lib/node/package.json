@@ -1,9 +1,19 @@
 {
-  "stack": "TypeError: Cannot read property 'original' of undefined\n    at Function.<anonymous> (/Users/craig/Dropbox/Developer/Public/mesh.js/lib/plugins/merge/merge.js:216:32)\n    at next (/Users/craig/Dropbox/Developer/Public/mesh.js/node_modules/stepc/lib/step.js:54:21)\n    at next (/Users/craig/Dropbox/Developer/Public/mesh.js/node_modules/stepc/lib/step.js:70:7)\n    at /Users/craig/Dropbox/Developer/Public/mesh.js/lib/plugins/merge/merge.js:202:16\n    at Object.forEach (/Users/craig/Dropbox/Developer/Public/mesh.js/node_modules/async/lib/async.js:93:20)\n    at Function.<anonymous> (/Users/craig/Dropbox/Developer/Public/mesh.js/lib/plugins/merge/merge.js:195:20)\n    at next (/Users/craig/Dropbox/Developer/Public/mesh.js/node_modules/stepc/lib/step.js:54:21)\n    at next (/Users/craig/Dropbox/Developer/Public/mesh.js/node_modules/stepc/lib/step.js:70:7)\n    at /Users/craig/Dropbox/Developer/Public/mesh.js/node_modules/async/lib/async.js:199:13\n    at /Users/craig/Dropbox/Developer/Public/mesh.js/node_modules/async/lib/async.js:93:20",
-  "arguments": [
-    "original",
-    null
-  ],
-  "type": "non_object_property_load",
-  "message": "Cannot read property 'original' of undefined"
+  "name": "beanpoll-store",
+  "description": "",
+  "author": "",
+  "version": "0.0.1",
+  "dependencies": {
+    "mesh-winston": "0.0.x"
+  },
+  "devDependencies": {},
+  "main": "./lib/web/index.js",
+  "directories": {
+    "mesh-src": "./src",
+    "lib": "./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crcn/beanpoll-store.git"
+  }
 }
