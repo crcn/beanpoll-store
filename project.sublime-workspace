@@ -19,7 +19,15 @@
 			"file": "src/web/index.js",
 			"settings":
 			{
-				"buffer_size": 2170,
+				"buffer_size": 2107,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin h188xe.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,7 +59,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 257,
+				"buffer_size": 420,
 				"line_ending": "Unix"
 			}
 		},
@@ -60,6 +68,14 @@
 			"settings":
 			{
 				"buffer_size": 123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin uRKJ23.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -119,6 +135,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"storeP",
+			"channel",
+			"is m",
 			"models",
 			"response.erro",
 			"console.l",
@@ -159,7 +178,6 @@
 	"groups":
 	[
 		{
-			"selected": 6,
 			"sheets":
 			[
 				{
@@ -193,15 +211,15 @@
 					"file": "src/web/index.js",
 					"settings":
 					{
-						"buffer_size": 2170,
+						"buffer_size": 2107,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2050,
-								2050
+								188,
+								193
 							]
 						],
 						"settings":
@@ -210,14 +228,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 662.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/tmp/subl stdin j9TZYX.txt",
+					"file": "/tmp/subl stdin h188xe.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -243,7 +261,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/tmp/subl stdin h2qjtk.txt",
+					"file": "/tmp/subl stdin j9TZYX.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -269,6 +287,32 @@
 				},
 				{
 					"buffer": 4,
+					"file": "/tmp/subl stdin h2qjtk.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "src/web/store.js",
 					"settings":
 					{
@@ -295,25 +339,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 257,
+						"buffer_size": 420,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								418,
+								418
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -322,7 +367,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": ".cupboard",
 					"settings":
 					{
@@ -348,7 +393,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
+					"file": "/tmp/subl stdin uRKJ23.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "/tmp/subl stdin 8WN3Qz.txt",
 					"settings":
 					{

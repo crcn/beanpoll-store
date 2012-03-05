@@ -9,11 +9,12 @@
     "devDependencies": {},
     "main": "./lib/web/index.js",
     "directories": {
-        "mesh-src": "./src",
+        "src": "./src",
         "lib": "./lib"
     },
     "repository": {
         "type": "git",
         "url": "git://github.com/crcn/beanpoll-store.git"
-    }
+    },
+    "mesh": true
 }
